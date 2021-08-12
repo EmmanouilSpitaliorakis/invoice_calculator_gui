@@ -1,19 +1,12 @@
 import React from 'react';
-import logo from './logo.png';
-import './App.css';
 import HelloWorld from './components/HelloWorld';
 
 function App() {
   return (
     <div id="app" className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to your new wails/react project.
-        </p>
+      <h1>Hello World</h1>
+      <HelloWorld/>
 
-        <HelloWorld />
-      </header>
     </div>
   );
 }

@@ -8,7 +8,7 @@ function HelloWorld() {
 	const handleOpenModal = () => {
 		setShowModal(true);
 
-		window.backend.non_basic().then((result) => setResult(result));
+		window.backend.non_basicclear().then((result) => setResult(result));
 	};
 
 	const handleCloseModal = () => {
