@@ -1,0 +1,25 @@
+{
+ "name": "invoice_calculator",
+ "description": "Invoice Calculator for the finance department of Housing Hand",
+ "author": {
+  "name": "manuel",
+  "email": "emm.spital@gmail.com"
+ },
+ "version": "0.1.0",
+ "binaryname": "invoice_calculator_gui",
+ "frontend": {
+  "dir": "frontend",
+  "install": "npm install",
+  "build": "npm run build",
+  "bridge": "src",
+  "serve": "npm run serve"
+ },
+ "tags": "",
+ "WailsVersion": "",
+ "CrossCompile": false,
+ "Platform": "",
+ "Architecture": "",
+ "LdFlags": "",
+ "GoPath": "",
+ "UseFirebug": false
+}
