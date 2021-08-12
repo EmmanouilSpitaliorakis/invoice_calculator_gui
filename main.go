@@ -6,8 +6,12 @@ import (
 	"github.com/wailsapp/wails"
 )
 
-func basic() string {
-	return "World!"
+// func basic() string {
+// 	return "World!"
+// }
+
+func non_basic() string {
+	return "Bacon!"
 }
 
 //go:embed frontend/build/static/js/main.js
@@ -26,6 +30,6 @@ func main() {
 		CSS:    css,
 		Colour: "#131313",
 	})
-	app.Bind(basic)
+	app.Bind(non_basic)
 	app.Run()
 }
