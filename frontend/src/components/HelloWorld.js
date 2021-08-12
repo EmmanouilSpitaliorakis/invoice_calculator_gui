@@ -26,7 +26,7 @@ function HelloWorld() {
 				contentLabel="Minimal Modal Example"
 			>
 				<p>{result}</p>
-				<button onClick={() => handleCloseModal()}>Close Modal</button>
+				<button onClick={() => handleCloseModal()}>Return to logo</button>
 			</Modal>
 		</div>
 	);
