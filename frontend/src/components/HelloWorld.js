@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Header from './Header';
+
+
 
 function HelloWorld() {
 	const [showModal, setShowModal] = useState(false);
@@ -8,7 +11,7 @@ function HelloWorld() {
 	const handleOpenModal = () => {
 		setShowModal(true);
 
-		window.backend.non_basicclear().then((result) => setResult(result));
+		window.backend.go_string().then((result) => setResult(<Header/>));
 	};
 
 	const handleCloseModal = () => {
@@ -17,7 +20,7 @@ function HelloWorld() {
 
 	return (
 		<div className="App">
-			<button onClick={() => handleOpenModal()} type="button">
+			<button className="btn" onClick={() => handleOpenModal()} type="button">
 				Enter
       </button>
 			<Modal
@@ -25,8 +28,8 @@ function HelloWorld() {
 				isOpen={showModal}
 				contentLabel="Minimal Modal Example"
 			>
-				<p>{result}</p>
-				<button onClick={() => handleCloseModal()}>Return to logo</button>
+				{result}
+				<button className="btn" onClick={() => handleCloseModal()}>Return</button>
 			</Modal>
 		</div>
 	);

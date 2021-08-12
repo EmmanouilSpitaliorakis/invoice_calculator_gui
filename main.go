@@ -10,7 +10,7 @@ import (
 // 	return "World!"
 // }
 
-func non_basic() string {
+func go_string() string {
 	return "Bacon!"
 }
 
@@ -28,8 +28,8 @@ func main() {
 		Title:  "Invoice Calculator",
 		JS:     js,
 		CSS:    css,
-		Colour: "#131313",
+		Colour: "#ffffff",
 	})
-	app.Bind(non_basic)
+	app.Bind(go_string)
 	app.Run()
 }
