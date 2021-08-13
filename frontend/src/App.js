@@ -6,10 +6,10 @@ function App() {
 
   return (
     <div id="app" className="App">
-      
+
       <HelloWorld/>
     </div>
-  );
+  );  
 }
 
 export default App;

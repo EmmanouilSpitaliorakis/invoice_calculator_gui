@@ -1,9 +1,10 @@
 import React from "react";
 
-const Header = () => {
+
+const Header = ({text}) => {
     return (
         <header className="header">
-            <h2>Invoice Calculator</h2>
+            <h2>{text}</h2>
         </header>
 
     )

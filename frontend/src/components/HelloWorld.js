@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Button from './Button';
 import Header from './Header';
 
 
@@ -11,7 +12,7 @@ function HelloWorld() {
 	const handleOpenModal = () => {
 		setShowModal(true);
 
-		window.backend.go_string().then((result) => setResult(<Header/>));
+		window.backend.go_string().then((result) => setResult(<Header text="Invoice Calculator"/>));
 	};
 
 	const handleCloseModal = () => {
@@ -20,16 +21,15 @@ function HelloWorld() {
 
 	return (
 		<div className="App">
-			<button className="btn" onClick={() => handleOpenModal()} type="button">
-				Enter
-      </button>
+			<Header text="Welcome to the Housing Hand Invoice Calculator"/>
+			<Button text='Enter' onClick={handleOpenModal}/>
 			<Modal
 				appElement={document.getElementById("app")}
 				isOpen={showModal}
 				contentLabel="Minimal Modal Example"
 			>
 				{result}
-				<button className="btn" onClick={() => handleCloseModal()}>Return</button>
+				<Button text="Return" onClick={handleCloseModal}/>
 			</Modal>
 		</div>
 	);
