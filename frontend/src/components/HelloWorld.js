@@ -11,8 +11,8 @@ function HelloWorld() {
 
 	const handleOpenModal = () => {
 		setShowModal(true);
-
 		window.backend.go_string().then((result) => setResult(<Header text="Invoice Calculator"/>));
+		console.log("Model Opened");
 	};
 
 	const handleCloseModal = () => {
