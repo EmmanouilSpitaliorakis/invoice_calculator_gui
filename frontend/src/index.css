@@ -10,13 +10,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  max-width: 500px;
-  margin: 30px auto;
+.App {
+  max-width: 550px;
+  margin: 25px auto;
   overflow: auto;
   min-height: 300px;
   border: 1px solid steelblue;
-  padding: 30px;
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -32,7 +32,7 @@ body {
   background: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 50px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -46,12 +46,16 @@ body {
 }
 
 .btn:active {
-  transform: scale(0.98);
+  transform: scale(0.9);
 }
 
-.btn-block {
-  display: block;
-  width: 100%;
+.btn-row {
+  display: flex;
+}
+
+.btn-col-md-4 {
+  flex-grow: 2;
+  text-align: center;
 }
 
 .task {
@@ -72,7 +76,7 @@ body {
 }
 
 .add-form {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .form-control {
@@ -91,19 +95,20 @@ body {
   font-size: 17px;
 }
 
-.form-control-check {
+.form-control-radio {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.form-control-check label {
+.form-control-radio label {
   flex: 1;
 }
 
-.form-control-check input {
-  flex: 2;
+.form-control-radio input {
+  flex: 0.75;
   height: 20px;
+  align-items: right;
 }
 
 footer {
