@@ -2,16 +2,13 @@ package main
 
 import (
 	_ "embed"
+	"fmt"
 
 	"github.com/wailsapp/wails"
 )
 
-// func basic() string {
-// 	return "World!"
-// }
-
-func go_string() string {
-	return "Bacon!"
+func go_string() {
+	fmt.Println("Model Opened")
 }
 
 //go:embed frontend/build/static/js/main.js

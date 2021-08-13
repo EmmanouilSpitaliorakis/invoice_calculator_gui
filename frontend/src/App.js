@@ -1,15 +1,15 @@
 import React from 'react';
-import HelloWorld from './components/HelloWorld';
-
+import Header from './components/Header';
+// import Button from './components/Button';
 
 function App() {
 
   return (
     <div id="app" className="App">
+      <Header text="Housing Hand Invoice Calculator"/>
 
-      <HelloWorld/>
     </div>
   );  
-}
+  }
 
 export default App;
