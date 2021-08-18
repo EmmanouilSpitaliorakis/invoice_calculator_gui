@@ -5,7 +5,7 @@ function Inputs() {
     const [id, setId] = useState("")
     const [fees, setFees] = useState("")
     const [length, setLength] = useState("")
-    const [type, setType] = useState("Full")
+    const [type, setType] = useState("")
 
     // const onSubmit = (e) =>{
 
@@ -39,9 +39,10 @@ function Inputs() {
             </div>
             <div className="form-control form-control-radio">
                 <label>Payment Type</label>
-                <input type="radio" value={type} name="payment" checked = {true}
+                <input type="radio" value="Full" name="payment"
                 onChange={(e)=> setType(e.target.value)}/>Full
-                <input type="radio" value={type} name="payment"
+
+                <input type="radio" value="Payment Plan" name="payment"
                 onChange={(e)=> setType(e.target.value)}/>Payment Plan
             </div>
         </form>
