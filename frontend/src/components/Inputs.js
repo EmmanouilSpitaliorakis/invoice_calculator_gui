@@ -5,16 +5,16 @@ function Inputs() {
     const [id, setId] = useState("")
     const [fees, setFees] = useState("")
     const [length, setLength] = useState("")
-    const [type, setType] = useState("")
+    const [type, setType] = useState("Full")
 
-    const onSubmit = (e) =>{
+    // const onSubmit = (e) =>{
 
-        e.preventDefault()
+    //     e.preventDefault()
 
-        if (!id){
-            alert("The Applicants ID is empty")
-        }
-    }
+    //     if (!id){
+    //         alert("The Applicants ID is empty")
+    //     }
+    // }
 
     return (
         <form className="add-form">
@@ -39,15 +39,11 @@ function Inputs() {
             </div>
             <div className="form-control form-control-radio">
                 <label>Payment Type</label>
-                <input type="radio" value={type} name="payment"
+                <input type="radio" value={type} name="payment" checked = {true}
                 onChange={(e)=> setType(e.target.value)}/>Full
                 <input type="radio" value={type} name="payment"
                 onChange={(e)=> setType(e.target.value)}/>Payment Plan
             </div>
-            {/* <div className="btn-row">
-                <div className="btn-col-md-4 "><input type="submit" value="Calculate" className="btn"/></div>
-                <div className="btn-col-md-4 "><input type="submit" value="Exit" className="btn"/></div>
-            </div> */}
         </form>
     )
 }
