@@ -6,7 +6,7 @@ import Output from "./components/Output";
 
 function App() {
 
-  const calculateOnClick = () => {
+  const calculateOnClick = (applicant) => {
     console.log("Calculate")
   }
 
