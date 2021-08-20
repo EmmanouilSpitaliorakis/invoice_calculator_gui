@@ -7,7 +7,7 @@ import Output from "./components/Output";
 function App() {
 
   const calculateOnClick = (applicant) => {
-    console.log("Calculate")
+      window.backend.go_string(text, fees, ).then(console.log)
   }
 
   const exitOnClick = () => {

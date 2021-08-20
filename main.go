@@ -7,8 +7,8 @@ import (
 	"github.com/wailsapp/wails"
 )
 
-func go_string() {
-	fmt.Println("Model Opened")
+func go_string(applicantName string, tenancyLength int, feesAmount float64) string {
+	return fmt.Sprintf("The Applicant Id is: %s, the Fees Amount is: %f, and the Tenancy Lenght is: %d", applicantName, feesAmount, tenancyLength)
 }
 
 //go:embed frontend/build/static/js/main.js
